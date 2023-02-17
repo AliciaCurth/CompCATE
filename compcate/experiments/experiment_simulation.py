@@ -791,7 +791,8 @@ def run_experiment_by_setting(setting=2, file_name='', n_train=5000, n_exp=10,
                              treatment_model_params={'support_covs': [1]},
                              file_name=file_name + '_setting1A',
                              n_exp=n_exp,
-                             risk=True
+                             risk=True,
+                             save_file=True,
                              )
 
     elif setting == '1B':
@@ -817,7 +818,8 @@ def run_experiment_by_setting(setting=2, file_name='', n_train=5000, n_exp=10,
                              treatment_model_params={'support_covs': [1]},
                              file_name=file_name + '_setting1B',
                              n_exp=n_exp,
-                             risk=True
+                             risk=True,
+                             save_file=True
                              )
     elif setting == '1C':
         # correctly specified logistic regression (setting same as setting 1 otherwise)
@@ -844,7 +846,8 @@ def run_experiment_by_setting(setting=2, file_name='', n_train=5000, n_exp=10,
                              treatment_model_params={'support_covs': [0]},
                              file_name=file_name + '_setting1C',
                              n_exp=n_exp,
-                             risk=True
+                             risk=True,
+                             save_file=True
                              )
 
     elif setting == '1D':
@@ -872,7 +875,8 @@ def run_experiment_by_setting(setting=2, file_name='', n_train=5000, n_exp=10,
                              treatment_model_params={'support_covs': [0]},
                              file_name=file_name + '_setting1D',
                              n_exp=n_exp,
-                             risk=True
+                             risk=True,
+                             save_file=True
                              )
     else:
         raise ValueError("Invalid setting name.")
